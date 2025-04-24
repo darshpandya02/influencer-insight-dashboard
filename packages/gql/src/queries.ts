@@ -11,6 +11,14 @@ export const GET_INFLUENCERS = gql`
   }
 `;
 
+export const GET_INSIGHTS = gql`
+  query GetInsights {
+    insight {
+    query
+    }
+  }
+`;
+
 // export const GET_INFLUENCER_ENGAGEMENT = gql`
 //   query GetInfluencerEngagement {
 //   influencers {

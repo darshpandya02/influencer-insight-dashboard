@@ -7,6 +7,15 @@
     },
     "dev": {
       "cache": false
-    }
+    },
+    "gql": {
+      "outputs": ["dist/**"]
+    },
+    "dashboard": {
+      "dependsOn": ["^gql"],
+      "outputs": ["build/**"]
+    },
+    "lint": {},
+    "test": {}
   }
 }

@@ -1,4 +1,4 @@
-import influencers from './mockData';
+import influencers from './data/mockData';
 import { queryRAGEngine } from './ragEngine';
 
 const resolvers = {
