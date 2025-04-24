@@ -14,8 +14,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "paths": {
+      "gql/*": ["../../packages/gql/src/*"]
+    },
+    "outDir": "dist"
   },
   "include": ["src"],
+  "extends": "../../tsconfig.json",
   "references": [{ "path": "../../packages/gql" }]
 }
