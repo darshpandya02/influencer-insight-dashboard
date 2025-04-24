@@ -1,0 +1,25 @@
+{
+  "name": "influencer-insight-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.5.1"
+  },
+  "resolutions": {
+  "@types/express": "^4.17.13"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.1"
+  }
+}
