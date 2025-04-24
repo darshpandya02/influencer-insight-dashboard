@@ -9,7 +9,7 @@ export const GET_INFLUENCERS = gql`
       followers
     }
   }
-`
+`;
 
 export const GET_INSIGHTS = gql`
   query GetInsights {
