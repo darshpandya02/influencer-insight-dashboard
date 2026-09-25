@@ -1,15 +1,9 @@
-import { ApolloServer } from 'apollo-server-express';
-import typeDefs from './typeDefs';
-import resolvers from './resolvers';
-import express, { Application } from 'express';
-const app: Application = express();
+import { createApp } from './server';
 
-const server = new ApolloServer({ typeDefs, resolvers });
 async function startServer() {
-  await server.start();
-  server.applyMiddleware({ app });
+  const app = await createApp('/graphql');
   app.listen({ port: 4000 }, () =>
-    console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+    console.log(`🚀 Server ready at http://localhost:4000/graphql`)
   );
 }
 startServer();

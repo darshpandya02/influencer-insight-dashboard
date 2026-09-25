@@ -2,6 +2,12 @@
   "name": "gql",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "src/index.ts",
-  "types": "src/index.ts"
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "@apollo/client": "^3.13.8"
+  }
 }

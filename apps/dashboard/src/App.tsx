@@ -1,10 +1,10 @@
 import './App.css';
 import { DataGrid } from '@mui/x-data-grid';
 import { useQuery, useMutation } from '@apollo/client';
-import { GET_INFLUENCERS } from 'gql/src/queries';
+import { GET_INFLUENCERS } from 'gql';
 import { Box, TextField, Button, Typography, CircularProgress, Container } from '@mui/material';
 import { SetStateAction, useState } from 'react';
-import * as queries from 'gql/src/queries';
+import * as queries from 'gql';
 
 console.log(queries);
 

@@ -11,6 +11,5 @@
     "forceConsistentCasingInFileNames": true,
   },
   "extends": "../../tsconfig.json",
-  "include": ["src", "src/data/mockData.ts"],
-  "references": [{ "path": "../../packages/gql" }]
+  "include": ["src", "src/data/mockData.ts"]
 }

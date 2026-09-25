@@ -16,12 +16,9 @@
     "jsx": "react-jsx",
     "baseUrl": "src",
     "rootDir": "src",
-    "paths": {
-      "gql/*": ["../../packages/gql/src/*"]
-    },
+    "paths": {},
     "outDir": "dist"
   },
   "include": ["src"],
-  "extends": "../../tsconfig.json",
-  "references": [{ "path": "../../packages/gql" }]
+  "extends": "../../tsconfig.json"
 }
